@@ -1,0 +1,154 @@
+body{
+    background-color:#f0f0f0;
+}
+
+.container{
+    max-width: 960px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+
+.header{
+    background-color: #5979ec;
+    &__logo{
+        color:white;
+       font-size: 20px;
+    }
+    &__warp{ 
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+}
+}
+    
+
+.search{
+   display: flex;  
+   padding: 8px; 
+   background-color: #91caeb;
+   border-radius: 8px;
+    &__input{
+    background: none;
+     border: none;
+  padding: 2px;
+ }  
+}
+
+.navs{
+    display: flex;
+    align-items: center;
+    &__item{
+        padding: 10px;
+        text-decoration: none;
+        color: #fafafa;
+    }
+}
+
+.hero{
+    background-color: rgb(26, 11, 161);
+&__wrap{
+    padding: 40px;
+ display: flex;
+    align-items: center;
+    justify-content: center;
+}
+&__title{
+    margin-left: 24px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    font-size: 32px;
+}
+&__description{
+    margin: 10px 0 24px 24px;
+}
+&__actions{
+    margin-left: 80px;
+    .button{
+        margin-left: 32px;
+        padding: 4px 16px ;
+        background-color: #fafafa;
+        border: 1px solid gray;
+        border-radius: 8px;
+    }
+}
+}
+
+
+.filter-bar{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.filter{
+    &__button{
+        padding: 16px;
+        background:white ;
+        appearance: none;
+        border: 1px solid gray;
+        position: relative;
+        width: 100%;
+        margin-top: 16px;
+    }}
+
+    .items{
+        display: grid;
+        gap:24px;
+        grid-template-columns: repeat(3,1fr);
+        padding: 16px 0;
+    }
+
+    .item{
+     background-color: white;
+    
+    &__header{
+        display: flex;
+        align-items: center;
+        padding: 8px;
+    }
+    &__avatar{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: gray;
+        margin-right: 8px;
+    }
+    &__thumbnail{
+        height: 160px;
+        max-width: 1000px;
+        margin: auto;
+        background: url(https://images.unsplash.com/photo-1592490839541-60ba593504cf?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ) center/cover;
+    }
+    &__body{
+        display: flex;
+        align-items: center;
+    }
+    &__collection-button{
+        flex: 1;
+        text-align: center;
+    }
+    &__like-button{
+        border-left: 1px solid #000;
+    }
+    &__button{
+        padding: 16px;
+        & + & {
+            border-top: 1px solid #000;
+        }
+    }
+}
+
+.footer{
+    background-color: #5979ec;
+    padding: 24px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    &__logo{
+        color: white;
+        font-size: 24px;
+        margin-top: 10px;
+    }
+}
